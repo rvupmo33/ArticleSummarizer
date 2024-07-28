@@ -57,3 +57,28 @@ body {
   border: 1px solid #000000;
   color: white;
 }
+
+.footer {
+  padding: 40px;
+  margin-top: 100px;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.footer p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.footerContentContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerContentContainer p {
+  font-size: 15px;
+}
+
+.linksContainer a {
+  font-size: 13px;
+  text-decoration: underline;
+}

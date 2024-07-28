@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import News from "./pages/News";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Team" element={<Team />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

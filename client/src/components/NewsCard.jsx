@@ -1,4 +1,3 @@
-// src/components/NewsCard.js
 import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -7,6 +6,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../News.css";
+
+const fallbackImage = "path/to/fallback/image.jpg";
 
 function NewsCard({ title, description, image, link }) {
   return (
@@ -18,7 +19,12 @@ function NewsCard({ title, description, image, link }) {
         flexDirection: "column",
       }}
     >
-      <CardMedia component="img" alt={title} height="140" image={image} />
+      <CardMedia
+        component="img"
+        alt={title}
+        height="140"
+        image={image || fallbackImage}
+      />
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography
           gutterBottom
@@ -49,7 +55,7 @@ function NewsCard({ title, description, image, link }) {
 NewsCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   link: PropTypes.string.isRequired,
 };
 

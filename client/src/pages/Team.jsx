@@ -11,6 +11,7 @@ const Team = () => {
         <h2>Meet Our Team</h2>
         <p>Reach Out To Members Using Their Socials</p>
       </div>
+      <br />
       <Box
         sx={{
           display: "flex",
