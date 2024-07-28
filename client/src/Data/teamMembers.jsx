@@ -21,18 +21,18 @@ export const teamMembers = [
   {
     avatarSrc: "/static/images/avatar/1.jpg",
     chipText: "Back-end",
-    name: "xx xx",
-    bio: "xxxxxxxxx",
+    name: "Shanmughapriya B S",
+    bio: "Hi! I'm a System Engineer based in India.",
     socialIcons: [
       {
         icon: faLinkedin,
-        url: "https://www.linkedin.com/in/test",
+        url: "https://www.linkedin.com/in/shanmughapriya-b-s/",
       },
       {
         icon: faGithub,
-        url: "https://github.com/test",
+        url: "https://github.com/Priya-284",
       },
     ],
-    email: "xxxx",
+    email: "priyamanian28@gmail.com",
   },
 ];
