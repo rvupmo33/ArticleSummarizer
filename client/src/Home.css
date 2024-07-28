@@ -1,0 +1,148 @@
+/* Welcome Bar */
+.welcomeBarContainer {
+  background-color: #e4e4e7;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.welcomeBarContainer h1 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.welcomeBarContainer h5 {
+  font-size: 13px;
+  line-height: 150%;
+  margin-top: 5px;
+}
+
+.welcomeBarContainer a {
+  font-size: 12px;
+  border-bottom: 1px solid black;
+}
+
+.subscriptionLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* HERO */
+.heroContainer {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.topStoryContainer {
+  width: 100%;
+}
+
+.topStoryContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* News Tabs Container */
+.newsTabsContainer {
+  flex-grow: 1;
+  width: 400px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab Titles */
+.newsTabsContainer .tabTitles {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 2px solid #ddd;
+}
+
+.newsTabsContainer .tabTitles li {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.newsTabsContainer .tabTitles li.activeTab {
+  border-bottom: 2px solid rgb(100, 138, 171);
+  font-weight: bold;
+}
+
+/* Tab Content */
+.newsTabsContainer .tabContent {
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 10px;
+}
+
+.newsTabsContainer .tabContent .tabDescription {
+  width: 100%;
+  padding: 5px 0px;
+  line-height: 1.6;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Articles List */
+.newsTabsContainer .tabContent .articlesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Article Item */
+.newsTabsContainer .tabContent .articlesList .articleItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  gap: 10px;
+}
+
+.newsTabsContainer .tabContent .articlesList .articleItem img {
+  width: 120px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.newsTabsContainer .tabContent .articlesList .articleItem .articleText {
+  flex: 1;
+}
+
+.newsTabsContainer .tabContent .articlesList .articleItem h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.newsTabsContainer .tabContent .articlesList .articleItem p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.newsTabsContainer .tabContent .articlesList .articleItem a {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(27, 78, 123);
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+  .newsTabsContainer {
+    width: 100%;
+  }
+}
