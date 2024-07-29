@@ -34,7 +34,7 @@ const News = () => {
           <NewsCard
             key={index}
             title={item.title}
-            description={item.summary || "Summary not available"}
+            description={item.content || "Summary not available"}
             image={item.urlToImage || placeHolderImg}
             link={item.url}
           />
