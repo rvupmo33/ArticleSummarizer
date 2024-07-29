@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+*.env
+
+# macOS
+.DS_Store
+
+# Miscellaneous
+*.swp
+*.swo
+*~
+
+# Coverage
+coverage/
