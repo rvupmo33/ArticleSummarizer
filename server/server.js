@@ -82,3 +82,4 @@ app.post("/summarize", (req, res) => {
 app.listen(port, () => {
   console.log(`Server started on port ${port} http://localhost:${port}`);
 });
+
