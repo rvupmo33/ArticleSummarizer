@@ -18,7 +18,7 @@ const News = () => {
     <>
       <div className="teamPageHeader">
         <h2>Latest News</h2>
-        <p>Check out the latest news articles with summaries.</p>
+        <p>Check out the latest news articles</p>
       </div>
       <div
         className="cardContainer"
